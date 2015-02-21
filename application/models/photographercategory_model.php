@@ -59,5 +59,10 @@ class photographercategory_model extends CI_Model
 		
 		return $return;
 	}
+    public function getcreativeartistscategory()
+	{
+		$query=$this->db->query("SELECT * FROM `photographercategory`  ORDER BY `id` ASC")->result();
+		return $query;
+	}
 }
 ?>

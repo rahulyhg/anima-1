@@ -11,14 +11,14 @@
     <title>Anima Creative Management</title>
 	
 	<!--CSS-->
-	<link href="css/style.css" rel="stylesheet">	
-	<link rel="stylesheet" href="css/gallery.css" type="text/css">
-    <link href="css/dl-menu.css" rel="stylesheet">	
-	<link href="css/insta.css" rel="stylesheet">	
-    <script src="js/jquery.min.js"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/modernizr.custom.js"></script>
-    <script src="js/jquery.dlmenu.js"></script>
+	<link href="<?php echo base_url("frontend")."/";?>css/style.css" rel="stylesheet">	
+	<link rel="stylesheet" href="<?php echo base_url("frontend")."/";?>css/gallery.css" type="text/css">
+    <link href="<?php echo base_url("frontend")."/";?>css/dl-menu.css" rel="stylesheet">	
+	<link href="<?php echo base_url("frontend")."/";?>css/insta.css" rel="stylesheet">	
+    <script src="<?php echo base_url("frontend")."/";?>js/jquery.min.js"></script>
+    <script src="<?php echo base_url("frontend")."/";?>js/slider.js"></script>
+    <script src="<?php echo base_url("frontend")."/";?>js/modernizr.custom.js"></script>
+    <script src="<?php echo base_url("frontend")."/";?>js/jquery.dlmenu.js"></script>
 		<script>
 			$(function() {
 				$( '#dl-menu' ).dlmenu();
@@ -120,7 +120,7 @@
         <div id="wrapper2">
        			
             <div class="tab_menu">
-                <a href="females_in_town.php">Back</a><br />
+                <a href="">Back</a><br />
                 Females in town
             </div>
             <div class="photo_tabs">
@@ -151,7 +151,7 @@
                                 <tr><td>Attribute</td><td>Value</td></tr>
                             </table>-->
                             <div class="model_details">
-                                <div class="modelname">Alicia Surname</div><br />
+                                <div class="modelname"><?php echo $model->name ?></div><br />
                                 <div class="att">Attribute</div><div class="value">Value</div>
                                 <div class="att">Attribute</div><div class="value">Value</div>
                                 <div class="att">Attribute</div><div class="value">Value</div>

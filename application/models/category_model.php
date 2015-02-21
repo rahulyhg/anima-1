@@ -59,5 +59,10 @@ class category_model extends CI_Model
 		
 		return $return;
 	}
+    public function getall()
+    {
+        $query=$this->db->query("SELECT * FROM `anima_category`")->result();
+        return $query;
+    }
 }
 ?>

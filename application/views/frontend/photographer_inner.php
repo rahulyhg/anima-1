@@ -11,12 +11,12 @@
     <title>Anima Creative Management</title>
 	
 	<!--CSS-->
-	<link href="css/style.css" rel="stylesheet">	
-	<link href="css/dl-menu.css" rel="stylesheet">	
-	<link href="css/insta.css" rel="stylesheet">	
-   <script src="js/modernizr.custom.js"></script>
+	<link href="<?php echo base_url("frontend")."/";?>css/style.css" rel="stylesheet">	
+	<link href="<?php echo base_url("frontend")."/";?>css/dl-menu.css" rel="stylesheet">	
+	<link href="<?php echo base_url("frontend")."/";?>css/insta.css" rel="stylesheet">	
+   <script src="<?php echo base_url("frontend")."/";?>js/modernizr.custom.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/jquery.dlmenu.js"></script>
+    <script src="<?php echo base_url("frontend")."/";?>js/jquery.dlmenu.js"></script>
 		<script>
 			$(function() {
 				$( '#dl-menu' ).dlmenu();
@@ -135,45 +135,22 @@
 
         <div class="container">
             <div class="tab_menu">
-                <a href="photographers.php">Back</a><br />
-                Photographers<span class="photographer_name"><i>Miguel Angelo - Mumbai</i></span>
+                <a href="<?php echo site_url("website/creativeartists?id=").$photographer->id."&name=".$creativecat->name; ?>">Back</a><br />
+                <?php echo $creativecat->name?><span class="photographer_name"><i><?php echo $photographer->name; ?> - <?php echo $photographer->city; ?></i></span>
             </div>
             <div class="photo_tabs">
-                <a href="#" id="editorial_tab">Editorial</a>
-                <a href="#" id="beauty_tab">Cover stories</a>
-                <a href="#" id="advertising_tab">Men</a>
+               <?php foreach($photographercats as $photographercat) { ?>
+                <a href="<?php echo site_url("website/artistgallery?id=").$photographercat->id."&creative=".$photographer->id;;?>" id="editorial_tab"><?php echo $photographercat->name; ?></a>
+                <?php } ?>
                 <a href="#" id="videos_tab">Videos</a>
                 <a href="#" id="bio_tab">Bio</a>
             </div>
 
             <div id="editorial">
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/editorial/miguel_1.jpg" class="display" alt="1"><span class="photo_name">Lisbon editorial</span></a></div>
+               <?php foreach($albums as $album) { ?>
+                <div class="col-h model_single"><a href="<?php echo site_url("website/albuminner?id=").$album->id;?>"><img src="<?php echo base_url("uploads")."/".$album->image;?>" class="display" alt="1"><span class="photo_name"><?php echo $album->title; ?></span></a></div>
                 
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/editorial/miguel_2.jpg" class="display" alt="1"><span class="photo_name">Portugal editorial</span></a></div>
-                
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/editorial/miguel_3.jpg" class="display" alt="1"><span class="photo_name">Mumbai editorial</span></a></div>
-                
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/editorial/miguel_4.jpg" class="display" alt="1"><span class="photo_name">Mumbai editorial</span></a></div>
-                
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/editorial/miguel_5.jpg" class="display" alt="1"><span class="photo_name">Lisbon editorial</span></a></div>
-                
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/editorial/miguel_6.jpg" class="display" alt="1"><span class="photo_name">Portugal editorial</span></a></div>
-                
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/editorial/miguel_7.jpg" class="display" alt="1"><span class="photo_name">Portugal editorial</span></a></div>
-                
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/editorial/miguel_8.jpg" class="display" alt="1"><span class="photo_name">Portugal editorial</span></a></div>
-                
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/editorial/miguel_9.jpg" class="display" alt="1"><span class="photo_name">Portugal editorial</span></a></div>
-                
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/editorial/miguel_10.jpg" class="display" alt="1"><span class="photo_name">Portugal editorial</span></a></div>
-                
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/editorial/miguel_11.jpg" class="display" alt="1"><span class="photo_name">Portugal editorial</span></a></div>
-                
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/editorial/miguel_12.jpg" class="display" alt="1"><span class="photo_name">Portugal editorial</span></a></div>
-                
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/editorial/miguel_13.jpg" class="display" alt="1"><span class="photo_name">Portugal editorial</span></a></div>
-                
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/editorial/miguel_14.jpg" class="display" alt="1"><span class="photo_name">Portugal editorial</span></a></div>
+                <?php } ?>
 
             <div id="footer">
                 <hr class="footer_top" />
@@ -255,10 +232,9 @@
             
             <div id="videos">
                 <div class="vid">
-                <iframe src="//player.vimeo.com/video/111553596"  width="50%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                <iframe src="//player.vimeo.com/video/41755731"  width="50%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                <iframe src="//player.vimeo.com/video/11927571"  width="50%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                <iframe src="//player.vimeo.com/video/19457624"  width="50%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <?php foreach($videos as $video) { ?>
+                <iframe src="<?php echo $video->video; ?>"  width="50%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <?php } ?>
                 </div>    
 
             <div id="footer">
@@ -280,7 +256,7 @@
             
             <div id="bio">
                 <div class="bio_inner">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p><br /><br />
+                    <p><?php echo $photographer->bio; ?></p><br /><br />
                     <p><strong>Magazines</strong></p>
                     <table border="0" class="bio_table">
                         <tr>
@@ -301,7 +277,7 @@
                     </table>
                 </div>
                 <div class="bio_inner">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.  </p><p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.  </p><p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </p>                </div>
+                    <p><?php echo $photographer->bio; ?> </p>                </div>
                 
                                  
             <div id="footer">
@@ -330,8 +306,8 @@
 	<!--/#scripts--> 
     
     <!--<script type="text/javascript" src="js/jquery.js"></script>-->
-    <script type="text/javascript" src="js/custom.js"></script>
-    <script type="text/javascript" src="js/jquery.instastream.js"></script>
+    <script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/custom.js"></script>
+    <script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/jquery.instastream.js"></script>
     
 </body>
 

@@ -1,20 +1,18 @@
 <center><a href="<?php echo base_url("frontend")."/";?>index.php"><img class="logo" src="<?php echo base_url("frontend")."/";?>images/logo.png" alt="logo"></a></center>
 <header class="menu">
         <ul>
+        <?php 
+            $catmodels= $this->category_model->getall();
+            $catcreativeartists = $this->photographercategory_model->getcreativeartistscategory();
+        ?>
         <li><a href="#" id="model">Models</a>
             <ul class="">
-                <li><a href="females_in_town.php">Female In Town</a></li>
-                <li><a href="#">Female Out of Town</a></li>
-                <li><a href="#">Male In Town</a></li>
-                <li><a href="#">Male Out of Town</a></li>
+               <?php foreach($catmodels as $catmodel) {?> <li><a href="<?php echo site_url("website/models?id=").$catmodel->id;?>"><?php echo $catmodel->name;?></a></li> <?php } ?>
             </ul>
         </li>
         <li><a href="#">Creative Artists</a>
             <ul class="">
-                <li><a href="photographers.php">Photographers</a></li>
-                <li><a href="hair_makeup.php">Hair &amp; Make-up Artists</a></li>
-                <li><a href="hair_stylists.php">Hair Stylists</a></li>
-                <li><a href="stylists.php">Stylists</a></li>
+               <?php foreach($catcreativeartists as $catartist) {?> <li><a href="<?php echo site_url("website/creativeartists?id=").$catartist->id."&name=".$catartist->name;?>"><?php echo $catartist->name;?></a></li> <?php } ?>
             </ul>
         </li>
         <li><a href="#">Agency</a>

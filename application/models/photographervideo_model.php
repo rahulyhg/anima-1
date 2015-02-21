@@ -47,5 +47,10 @@ class photographervideo_model extends CI_Model
         $query=$this->db->query("DELETE FROM `anima_photographervideo` WHERE `id`='$id'");
         return $query;
     }
+    public function getallbyphotographer($id)
+    {
+        $query=$this->db->query("SELECT * FROM `anima_photographervideo` WHERE `photographer`='$id'");
+        return $query;
+    }
 }
 ?>

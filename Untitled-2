@@ -1,0 +1,10 @@
+SELECT 
+`category`.`name`, 
+`model`.`height`, `model`.`bust`, model.waist, model.hips, model.eyes, model.shoe, 
+modelgallery.id, modelgallery.title, modelgallery.image, modelgallery.timestamp, modelgallery.order, 
+modelgalleryimage.name, modelgalleryimage.image, modelgalleryimage.type, modelgalleryimage.order, modelgalleryimage.timestamp
+FROM 
+`anima_modelgalleryimage`
+INNER JOIN `anima_modelgallery` ON `anima_modelgalleryimage`.`modelgallery` = `anima_modelgallery`.`id`
+INNER JOIN `anima_model` ON `anima_modelgallery`.`model`=`anima_model`.`id`
+INNER JOIN `anima_modelcategory` ON `anima_modelcategory`.`id`=`anima_model`.`category`

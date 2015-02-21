@@ -69,5 +69,15 @@ class photographeralbum_model extends CI_Model
         $query=$this->db->update( "photographeralbumgalleryimage", $data );
         return 1;
     }
+    public function getfirstgallery($id) {
+        $query=$this->db->query("SELECT `anima_photographeralbum`.`id` AS `id` FROM  `anima_photographeralbum` INNER JOIN `anima_photographer` ON `anima_photographer`.`id` = `anima_photographeralbum`.`photographer` WHERE `anima_photographer`.`id` = '$id' ORDER BY `anima_photographeralbum`.`order` LIMIT 0,1 ")->row();
+        return $query->id;
+        
+    }
+    public function getallbyartist($id)
+	{
+		$query=$this->db->query("SELECT * FROM `anima_photographeralbum` WHERE `anima_photographeralbum`.`photographer`='$id' ORDER BY `anima_photographeralbum`.`order`")->result();
+		return $query;
+	}
 }
 ?>

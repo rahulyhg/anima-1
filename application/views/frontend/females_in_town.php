@@ -11,12 +11,12 @@
     <title>Anima Creative Management</title>
 	
 	<!--CSS-->
-	<link href="css/style.css" rel="stylesheet">	
-	<link href="css/dl-menu.css" rel="stylesheet">	
-	<link href="css/insta.css" rel="stylesheet">	
-    <script src="js/modernizr.custom.js"></script>
+	<link href="<?php echo base_url("frontend")."/";?>css/style.css" rel="stylesheet">	
+	<link href="<?php echo base_url("frontend")."/";?>css/dl-menu.css" rel="stylesheet">	
+	<link href="<?php echo base_url("frontend")."/";?>css/insta.css" rel="stylesheet">	
+    <script src="<?php echo base_url("frontend")."/";?>js/modernizr.custom.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/jquery.dlmenu.js"></script>
+    <script src="<?php echo base_url("frontend")."/";?>js/jquery.dlmenu.js"></script>
 		<script>
 			$(function() {
 				$( '#dl-menu' ).dlmenu();
@@ -50,52 +50,10 @@
             <div class="models">
                
 
-
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f1.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f2.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f3.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f4.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f5.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f6.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f7.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f8.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f9.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f10.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                 <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f1.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f2.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f3.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f4.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f5.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f6.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f7.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f8.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f9.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f10.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                 <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f1.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f2.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f3.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f4.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f5.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f6.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f7.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f8.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f9.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f10.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                 <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f1.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f2.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f3.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f4.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f5.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f6.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f7.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f8.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f9.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f10.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                 <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f1.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f2.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f3.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f4.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>
-                <div class="col-5 model_single"><a href="gallery.php"><img src="images/females_town/f5.jpg" class="displayed" alt="1"><span class="model_name">Model Name Here</span></a></div>                 
+<?php foreach($models as $model) {?>
+                <div class="col-5 model_single"><a href="<?php echo site_url("website/modelinner?id=").$model->id; ?>"><img src="<?php echo base_url("uploads")."/".$model->image;?>" class="displayed" alt="1"><span class="model_name"><?php echo $model->name; ?></span></a></div>
+                <?php } ?>
+                                
             </div>
         </div>
         <div id="footer">
@@ -119,8 +77,8 @@
 	<!--/#scripts--> 
     
     <!--<script type="text/javascript" src="js/jquery.js"></script>-->
-    <script type="text/javascript" src="js/custom.js"></script>
-    <script type="text/javascript" src="js/jquery.instastream.js"></script>
+    <script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/custom.js"></script>
+    <script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/jquery.instastream.js"></script>
     
 </body>
 

@@ -64,5 +64,10 @@ class photographeralbumgallery_model extends CI_Model
         
 //		return $query;
 	}
+    public function getalbumbygallery($id)
+    {
+        $query=$this->db->query("SELECT * FROM `photographeralbumgallery` WHERE `photographeralbum`='$id'")->result();
+        return $query;
+    }
 }
 ?>

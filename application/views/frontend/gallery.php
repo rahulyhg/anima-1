@@ -11,16 +11,16 @@
     <title>Anima Creative Management</title>
 	
 	<!--CSS-->
-	<link href="css/style.css" rel="stylesheet">	
+	<link href="<?php echo base_url("frontend")."/";?>css/style.css" rel="stylesheet">	
 	<!--<link href="css/jcarousel.css" rel="stylesheet">--> 
-    <link href="css/jcarousel.connected-carousels.css" rel="stylesheet">	
-	<link href="css/dl-menu.css" rel="stylesheet">	
-	<link href="css/insta.css" rel="stylesheet">	
-    <script src="js/modernizr.custom.js"></script>
+    <link href="<?php echo base_url("frontend")."/";?>css/jcarousel.connected-carousels.css" rel="stylesheet">	
+	<link href="<?php echo base_url("frontend")."/";?>css/dl-menu.css" rel="stylesheet">	
+	<link href="<?php echo base_url("frontend")."/";?>css/insta.css" rel="stylesheet">	
+    <script src="<?php echo base_url("frontend")."/";?>js/modernizr.custom.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
-    <script type="text/javascript" src="js/jcarousel.connected-carousels.js"></script>
-    <script src="js/jquery.dlmenu.js"></script>
+    <script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/jcarousel.connected-carousels.js"></script>
+    <script src="<?php echo base_url("frontend")."/";?>js/jquery.dlmenu.js"></script>
 		<script>
 			$(function() {
 				$( '#dl-menu' ).dlmenu();
@@ -183,12 +183,12 @@
     <div class="wrapper">
         <div class="container" style="margin-top: 0;">
             <div class="tab_menu">
-                <a href="females_in_town.php">female in town</a><span class="photographer_name model_up_name"><i>alicia surname</i></span>
+                <a href="<?php echo site_url("website/models?id=").$model->category; ?>"><?php echo $category->name ?></a><span class="photographer_name model_up_name"><i><?php echo $model->name; ?></i></span>
             </div>
             <div class="photo_tabs" style="padding-top: 0;">
-                <a href="#" id="editorial_tab">portfolio</a>
-                <a href="#" id="beauty_tab">polaroids</a>
-                <a href="#" id="advertising_tab">shows</a>
+               <?php foreach($gallery as $gal) { ?>
+                <a href="<?php echo site_url("website/modelgallery?id=").$gal->id."&model=".$model->id; ?>" id="editorial_tab"><?php echo $gal->title ?></a>
+                <?php } ?>
                 <a href="#" id="videos_tab">videos</a>
                 <a href="#" id="bio_tab">bio</a>
             </div>
@@ -201,41 +201,34 @@
                         <ul>
                             <li>
                                 <div class="double_img">
-                                    <a href="females_in_town.php" class="black_link">
+                                    <a href="<?php echo site_url("website/models?id=").$model->category; ?>" class="black_link">
                                     <div class="model_info">
-                                        <img src="images/logo.png" class="small_logo">
+                                        <img src="<?php echo base_url("frontend")."/";?>images/logo.png" class="small_logo">
                                         <table align="center" class="model_table">
                                             <!--<tr><td colspan="2"><img src="images/mobile_logo.png" height="18"></td></tr>-->
-                                            <tr><td colspan="2" class="model_n"><center>alicia surname</center></td></tr>
-                                            <tr><td class="att">height</td><td class="value">176cm/5'8.5</td></tr>
-                                            <tr><td class="att">bust</td><td class="value">82cm/32"</td></tr>
-                                            <tr><td class="att">waist</td><td class="value">64cm/24"</td></tr>
-                                            <tr><td class="att">hips</td><td class="value">89cm/35"</td></tr>
-                                            <tr><td class="att">eyes</td><td class="value">brown</td></tr>
-                                            <tr><td class="att">brown</td><td class="value">brown</td></tr>
-                                            <tr><td class="att">shoe</td><td class="value">39</td></tr>
+<!--                                            <?php print_r($model->json);  ?>-->
+                                            <tr><td colspan="2" class="model_n"><center><?php echo $model->name ?></center></td></tr>
+                                            <tr><td class="att">height</td><td class="value"><?php echo $model->json[0]->value; ?></td></tr>
+                                            <tr><td class="att">bust</td><td class="value"><?php echo $model->json[1]->value; ?></td></tr>
+                                            <tr><td class="att">waist</td><td class="value"><?php echo $model->json[2]->value; ?>"</td></tr>
+                                            <tr><td class="att">hips</td><td class="value"><?php echo $model->json[3]->value; ?>"</td></tr>
+                                            <tr><td class="att">eyes</td><td class="value"><?php echo $model->json[4]->value; ?></td></tr>
+                                            <tr><td class="att">shoe</td><td class="value"><?php echo $model->json[5]->value; ?></td></tr>
                                         </table>
 
                              
-                                    </div></a>
-                                    <img src="images/model/1.jpg" style="float: left;" height="100%" alt="">
+                                    </div>
+                                    </a>
+                                    <!--<?php print_r($modelimages) ?>-->
+                                    <img src="<?php echo base_url("uploads")."/".$modelimages[0]->image?>" style="float: left;" height="100%" alt="">
                                 </div>
                             </li>
-                            <li><img src="images/model/2.jpg" height="100%" alt=""></li>
-                            <li><img src="images/model/4.jpg" height="100%" alt=""></li>
-                            <li><div class="double_img"><img src="images/model/5.jpg" style="float: left;" height="100%" alt=""><img src="images/model/6.jpg" style="float: left;" height="100%" alt=""></div></li>
-                            <li><img src="images/model/7.jpg" height="100%" alt=""></li>
-                            <li><img src="images/model/8.jpg" height="100%" alt=""></li>
-                            <li><img src="images/model/9.jpg" height="100%" alt=""></li>
-                            <li><img src="images/model/10.jpg" height="100%" alt=""></li>
-                            <li><img src="images/model/11.jpg" height="100%" alt=""></li>
-                            <li><img src="images/model/12.jpg" height="100%" alt=""></li>
-                            <li><img src="images/model/13.jpg" height="100%" alt=""></li>
-                            <li><img src="images/model/14.jpg" height="100%" alt=""></li>
-                            <li><div class="double_img"><img src="images/model/15.jpg" style="float: left;" height="100%" alt=""><img src="images/model/18.jpg" style="float: left;" height="100%" alt=""></div></li>
-                            <li><img src="images/model/16.jpg" height="100%" alt=""></li>
-                            <li><img src="images/model/17.jpg" height="100%" alt=""></li>
-                            <li><img src="images/model/19.jpg" height="100%" alt=""></li>
+                            <?php $length = count($modelimages); for($x = 1; $x<$length; $x++) { 
+                            if($modelimages[$x]->type == 1) { ?>
+                            <li><img src="<?php echo base_url("uploads")."/".$modelimages[$x]->image ?>" height="100%" alt=""></li>
+                            <?php }else {?>                     
+                            <li><div class="double_img"><img src="<?php echo base_url("uploads")."/".$modelimages[$x]->image ?>" style="float: left;" height="100%" alt=""><img src="<?php echo base_url("uploads")."/".$modelimages[$x++]->image ?>" style="float: left;" height="100%" alt=""></div></li>
+                            <?php }; };?>
                         </ul>
                     </div>
                     <a href="#" class="prev prev-stage"></a>
@@ -244,26 +237,15 @@
                     
                 <!--<span class="details">height: 5 ft 9(69 in) chest: 32 in  waist: 24 in hips: 35 in dress: 4 shoe: 7</span>-->
                 <div class="navigation">
-                    <a href="#" class="prev prev-navigation"><img src="images/prev.png"></a>
-                    <a href="#" class="next next-navigation"><img src="images/next.png"></a>
+                    <a href="#" class="prev prev-navigation"><img src="<?php echo base_url("frontend")."/";?>images/prev.png"></a>
+                    <a href="#" class="next next-navigation"><img src="<?php echo base_url("frontend")."/";?>images/next.png"></a>
                     <div class="carousel carousel-navigation">
                         <ul>
-                            <li id="first_child"><img src="images/model/1.jpg" alt=""></li>
-                            <li id="second_child"><img src="images/model/2.jpg" alt=""></li>
-                            <li><img src="images/model/4.jpg" alt=""></li>
-                            <li><img src="images/model/5.jpg" alt="" style="float: left;"><img src="images/model/6.jpg"  alt="" style="float: left;"></li>
-                            <li><img src="images/model/7.jpg" alt=""></li>
-                            <li><img src="images/model/8.jpg" alt=""></li>
-                            <li><img src="images/model/9.jpg" alt=""></li>
-                            <li><img src="images/model/10.jpg" alt=""></li>
-                            <li><img src="images/model/11.jpg" alt=""></li>
-                            <li><img src="images/model/12.jpg" alt=""></li>
-                            <li><img src="images/model/13.jpg" alt=""></li>
-                            <li><img src="images/model/14.jpg" alt=""></li>
-                            <li><img src="images/model/15.jpg" alt="" style="float: left;"><img src="images/model/18.jpg"  alt="" style="float: left;"></li>
-                            <li><img src="images/model/16.jpg" alt=""></li>
-                            <li><img src="images/model/17.jpg" alt=""></li>
-                            <li><img src="images/model/19.jpg" alt=""></li>
+                            <li id="first_child"><img src="<?php echo base_url("uploads")."/".$modelimages[0]->image ?>" alt=""></li>
+                            <?php for($y=1; $y<$length; $y++) { if($modelimages[$y]->type == 1) { ?>
+                            <li id="second_child"><img src="<?php echo base_url("uploads")."/".$modelimages[$y]->image ?>" alt=""></li>         <?php }else { ?>
+                            <li><img src="<?php echo base_url("uploads")."/".$modelimages[$y]->image ?>" alt="" style="float: left;"><img src="<?php echo base_url("uploads")."/".$modelimages[$y++]->image ?>"  alt="" style="float: left;"></li>
+                            <?php } }; ?>
                             
                         </ul>
                     </div>
@@ -313,17 +295,15 @@
             
             <div id="videos">
                 <div class="vid">
-                <iframe src="//player.vimeo.com/video/111553596"  width="50%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                <iframe src="//player.vimeo.com/video/41755731"  width="50%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                <iframe src="//player.vimeo.com/video/11927571"  width="50%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                <iframe src="//player.vimeo.com/video/19457624"  width="50%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <?php foreach($modelvideos as $video) {?>
+                <iframe src="<?php echo $video->video; ?>"  width="50%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <?php }; ?>
                 </div>    
                 
                 <div class="video_thumb">
-                    <div class="thumbs"><img src="images/video/thumb1.jpg"><span>video name</span></div>
-                    <div class="thumbs"><img src="images/video/thumb2.jpg"><span>video name</span></div>
-                    <div class="thumbs"><img src="images/video/thumb3.jpg"><span>video name</span></div>
-                    <div class="thumbs"><img src="images/video/thumb4.jpg"><span>video name</span></div>
+                   <?php foreach($modelvideos as $video) {?>
+                    <div class="thumbs"><img src="images/video/thumb1.jpg"><span><?echo $video->video; ?></span></div>
+                    <?php }; ?>
 
                 </div>
             
@@ -335,8 +315,8 @@
 
             <div id="bio">
                 <div class="bio_inner">
-                    <img src="images/model/5.jpg">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p><br /><br />
+                    <img src="<?php echo base_url("uploads")."/".$model->image ?>">
+                    <p><?php echo $model->bio; ?></p><br /><br />
                     <p><strong>Magazines</strong></p>
                     <table border="0" class="bio_table">
                         <tr>
@@ -357,7 +337,7 @@
                     </table>
                 </div>
                 <div class="bio_inner">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.  </p><p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.  </p><p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </p>                </div>
+                    <p>Abhay Amin (this is in UI) </p>                </div>
                 
                                  
             
@@ -373,8 +353,8 @@
 	<!--/#scripts--> 
     
     <!--<script type="text/javascript" src="js/jquery.js"></script>-->
-    <script type="text/javascript" src="js/custom.js"></script>
-    <script type="text/javascript" src="js/jquery.instastream.js"></script>
+    <script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/custom.js"></script>
+    <script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/jquery.instastream.js"></script>
     </div>
 </body>
 

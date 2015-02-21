@@ -144,5 +144,44 @@ WHERE `anima_modelvideo`.`model`='$id'
 ORDER BY `anima_modelvideo`.`order`")->result();
         return $query;
     }
+    public function getmodelsbycat($id)
+    {
+        $query=$this->db->query("SELECT `id`,`name`,`image` FROM `anima_model` WHERE `category` = '$id' ")->result();
+        return $query;
+    }
+    public function getmodeldata($id)
+    {
+        $query=$this->db->query("SELECT 
+`modelgallery`.`id`, `modelgallery`.`title`, `modelgallery`.`image`, `modelgallery`.`timestamp`, `modelgallery`.`order`, `modelgalleryimage`.`name`, `modelgalleryimage`.`image`, `modelgalleryimage`.`type`, `modelgalleryimage`.`order`, `modelgalleryimage`.`timestamp` 
+FROM `modelgalleryimage` 
+INNER JOIN `modelgallery` ON `modelgalleryimage`.`modelgallery` = `modelgallery`.`id` 
+WHERE `modelgallery`.`model` = '$id' ORDER BY `modelgallery`.`order`")->result();
+        return $query;
+    }
+        public function getcategoryname($id)
+    {
+        $query=$this->db->query("SELECT `anima_category`.`name` FROM  `anima_category` INNER JOIN `anima_model` ON `anima_category`.`id` = `anima_model`.`category` WHERE `anima_model`.`id` = '$id'")->row();
+        return $query;
+    }
+    public function getfirstgallery($id) {
+        $query=$this->db->query("SELECT `modelgallery`.`id` AS `id` FROM  `modelgallery` INNER JOIN `anima_model` ON `anima_model`.`id` = `modelgallery`.`model` WHERE `anima_model`.`id` = '$id' ORDER BY `modelgallery`.`order` LIMIT 0,1 ")->row();
+        return $query->id;
+        
+    }
+    public function getallgallery($id)
+    {
+        $query=$this->db->query("SELECT `modelgallery`.`id` AS `id`,`modelgallery`.`title` AS `title` FROM `modelgallery` WHERE `modelgallery`.`model`= '$id'")->result();
+        return $query;
+    }
+    public function getmodelgallerydata($gallery)
+    {
+        $query=$this->db->query("SELECT * FROM `modelgalleryimage` WHERE `modelgalleryimage`.`modelgallery`= '$gallery' ORDER BY `modelgalleryimage`.`order`")->result();
+        return $query;
+    }
+    public function modelvideos($id)
+    {
+        $query=$this->db->query("SELECT * FROM `anima_modelvideo` WHERE `anima_modelvideo`.`model`= '$id' ORDER BY `anima_modelvideo`.`order`")->result();
+        return $query;
+    }
 }
 ?>
