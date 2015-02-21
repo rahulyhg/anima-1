@@ -16,5 +16,11 @@ class Website extends CI_Controller
 		$data["newss"]=$this->news_model->getall();
         $this->load->view("frontend/news",$data);
 	}
+    public function newsinner( )
+	{
+        $newsid=$this->input->get_post("id");
+		$data["news"]=$this->news_model->beforeedit($newsid);
+        $this->load->view("frontend/news_inner",$data);
+	}
 }
 ?>

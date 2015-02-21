@@ -30,13 +30,13 @@
             <div id="news_block">
                 <ul id="lazyScrollLoading">
                 <?php foreach($newss as $news) { ?>
-                <li>    
+                <a href="<?php echo site_url("website/newsinner?id=").$news->id;?>"><li>    
                 <div class="news">
                     <img src="<?php echo base_url("uploads")."/".$news->image;?>">
                     <strong><?php echo $news->title;?></strong><hr />
                     <?php echo $news->content;?>
                 </div>
-                </li>
+                </li></a>
                 
                 <?php } ?>
                
