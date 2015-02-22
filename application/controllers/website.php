@@ -98,5 +98,20 @@ class Website extends CI_Controller
         $data["videos"] = $this->photographervideo_model->getallbyphotographer($creativeid);
         $this->load->view("frontend/photographer_inner",$data);
     }
+    
+    public function albuminner()
+    {
+        //ID OF ARTIST
+        
+        $album = $this->input->get_post("id");
+        //CAT OF ARTIST
+        //GET CATEGORY NAME FOR BACK BUTTON NAME
+        $data["category"]=$this->photographeralbumgallery_model->getsubcategoryandartist($album);
+       
+       
+		$data["modelimages"]=$this->photographeralbumgallery_model->getallimagesbyalbum($album);
+        $this->load->view("frontend/gallery2",$data);
+    }
+    
 }
 ?>

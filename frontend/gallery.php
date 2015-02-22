@@ -249,7 +249,7 @@
                     <div class="carousel carousel-navigation">
                         <ul>
                             <li id="first_child"><img src="images/model/1.jpg" alt=""></li>
-                            <li id="second_child"><img src="images/model/2.jpg" alt=""></li>
+                            <li><img src="images/model/2.jpg" alt=""></li>
                             <li><img src="images/model/4.jpg" alt=""></li>
                             <li><img src="images/model/5.jpg" alt="" style="float: left;"><img src="images/model/6.jpg"  alt="" style="float: left;"></li>
                             <li><img src="images/model/7.jpg" alt=""></li>

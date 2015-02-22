@@ -183,15 +183,10 @@
     <div class="wrapper">
         <div class="container" style="margin-top: 0;">
             <div class="tab_menu">
-                <a href="<?php echo site_url("website/models?id=").$model->category; ?>"><?php echo $category->name ?></a><span class="photographer_name model_up_name"><i><?php echo $model->name; ?></i></span>
+               
+                <a href="<?php echo site_url("website/artistgallery?id=$category->subcatid&creative=$category->artistid"); ?>"><?php echo $category->subcatname ?></a><span class="photographer_name model_up_name" style="opacity:1;"><i><?php echo $category->artistname; ?></i></span>
             </div>
-            <div class="photo_tabs" style="padding-top: 0;">
-               <?php foreach($gallery as $gal) { ?>
-                <a href="<?php echo site_url("website/modelgallery?id=").$gal->id."&model=".$model->id; ?>" id="editorial_tab"><?php echo $gal->title ?></a>
-                <?php } ?>
-                <a href="#" id="videos_tab">videos</a>
-                <a href="#" id="bio_tab">bio</a>
-            </div>
+            
 
             <div id="editorial">
             
@@ -204,17 +199,7 @@
                                     <a href="<?php echo site_url("website/models?id=").$model->category; ?>" class="black_link">
                                     <div class="model_info">
                                         <img src="<?php echo base_url("frontend")."/";?>images/logo.png" class="small_logo">
-                                        <table align="center" class="model_table">
-                                            <!--<tr><td colspan="2"><img src="<?php echo base_url("frontend")."/";?>images/mobile_logo.png" height="18"></td></tr>-->
-<!--                                            <?php print_r($model->json);  ?>-->
-                                            <tr><td colspan="2" class="model_n"><center><?php echo $model->name ?></center></td></tr>
-                                            <tr><td class="att">height</td><td class="value"><?php echo $model->json[0]->value; ?></td></tr>
-                                            <tr><td class="att">bust</td><td class="value"><?php echo $model->json[1]->value; ?></td></tr>
-                                            <tr><td class="att">waist</td><td class="value"><?php echo $model->json[2]->value; ?>"</td></tr>
-                                            <tr><td class="att">hips</td><td class="value"><?php echo $model->json[3]->value; ?>"</td></tr>
-                                            <tr><td class="att">eyes</td><td class="value"><?php echo $model->json[4]->value; ?></td></tr>
-                                            <tr><td class="att">shoe</td><td class="value"><?php echo $model->json[5]->value; ?></td></tr>
-                                        </table>
+                                        
 
                              
                                     </div>
@@ -256,23 +241,6 @@
 
 
             </div>
-            <div id="beauty">
-                <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/coverstories/miguel_1.jpg" class="display" alt="1"><span class="photo_name">Portugal cover stories</span></a></div>
-                
-                <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/coverstories/miguel_2.jpg" class="display" alt="1"><span class="photo_name">Portugal cover stories</span></a></div>
-                
-                <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/coverstories/miguel_3.jpg" class="display" alt="1"><span class="photo_name">Portugal cover stories</span></a></div>
-                
-                <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/coverstories/miguel_4.jpg" class="display" alt="1"><span class="photo_name">Portugal cover stories</span></a></div>
-                
-                <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/coverstories/miguel_5.jpg" class="display" alt="1"><span class="photo_name">Portugal cover stories</span></a></div>
-                
-                <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/coverstories/miguel_6.jpg" class="display" alt="1"><span class="photo_name">Portugal cover stories</span></a></div>
-                
-                <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/coverstories/miguel_7.jpg" class="display" alt="1"><span class="photo_name">Portugal cover stories</span></a></div>    
-
-            
-            </div>
             
             
             <div id="advertising">
@@ -293,55 +261,10 @@
             </div>
             
             
-            <div id="videos">
-                <div class="vid">
-                <?php foreach($modelvideos as $video) {?>
-                <iframe src="<?php echo $video->video; ?>"  width="50%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                <?php }; ?>
-                </div>    
-                
-                <div class="video_thumb">
-                   <?php foreach($modelvideos as $video) {?>
-                    <div class="thumbs"><img src="<?php echo base_url("frontend")."/";?>images/video/thumb1.jpg"><span><?echo $video->video; ?></span></div>
-                    <?php }; ?>
-
-                </div>
             
-            </div>
             
-            <div class="big_video">
-                <iframe src="//player.vimeo.com/video/19457624"  width="750" height="510" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </div>
-
-            <div id="bio">
-                <div class="bio_inner">
-                    <img src="<?php echo base_url("uploads")."/".$model->image ?>">
-                    <p><?php echo $model->bio; ?></p><br /><br />
-                    <p><strong>Magazines</strong></p>
-                    <table border="0" class="bio_table">
-                        <tr>
-                            <td><a href="#">Magzine</a></td>
-                            <td><a href="#">Magzine</a></td>
-                            <td><a href="#">Magzine</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Magzine</a></td>
-                            <td><a href="#">Magzine</a></td>
-                            <td><a href="#">Magzine</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Magzine</a></td>
-                            <td><a href="#">Magzine</a></td>
-                            <td><a href="#">Magzine</a></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="bio_inner">
-                    <p></p>                </div>
-                
-                                 
+           
             
-            </div>
     
         </div>
         

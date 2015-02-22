@@ -69,5 +69,18 @@ class photographeralbumgallery_model extends CI_Model
         $query=$this->db->query("SELECT * FROM `photographeralbumgallery` WHERE `photographeralbum`='$id'")->result();
         return $query;
     }
+    
+    public function getallimagesbyalbum($id)
+    {
+        $query=$this->db->query("SELECT * 
+FROM  `photographeralbumgalleryimage` WHERE `photographeralbumgallery`='$id'")->result();
+        return $query;
+    }
+    public function getsubcategoryandartist($id)
+    {
+        $query=$this->db->query("SELECT `anima_photographeralbum`.`id` as `subcatid`,`anima_photographeralbum`.`name` as `subcatname`,`anima_photographer`.`id` as `artistid`,`anima_photographer`.`name` as `artistname` FROM `photographeralbumgallery` INNER JOIN  `anima_photographeralbum` ON `anima_photographeralbum`.`id`=`photographeralbumgallery`.`photographeralbum` INNER JOIN `anima_photographer` ON `anima_photographer`.`id`=`anima_photographeralbum`.`photographer` WHERE `photographeralbumgallery`.`id`='$id'")->row();
+        return $query;
+    }
+        
 }
 ?>
