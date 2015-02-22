@@ -11,11 +11,11 @@
     <title>Anima Creative Management</title>
 	
 	<!--CSS-->
-	<link href="css/style.css" rel="stylesheet">	
-	<link href="css/insta.css" rel="stylesheet">	
-	<link href="css/dl-menu.css" rel="stylesheet">	
+	<link href="<?php echo base_url("frontend")."/";?>css/style.css" rel="stylesheet">	
+	<link href="<?php echo base_url("frontend")."/";?>css/insta.css" rel="stylesheet">	
+	<link href="<?php echo base_url("frontend")."/";?>css/dl-menu.css" rel="stylesheet">	
 
-    <script src="js/modernizr.custom.js"></script>
+    <script src="<?php echo base_url("frontend")."/";?>js/modernizr.custom.js"></script>
 	<script type="text/javascript">
 
      $(document).ready(function () {
@@ -72,10 +72,10 @@
                     <p>** Do not contact the agency regarding your application, the agency will contact you should you be successful.<br />
                     *** Please do not send hi res files over 600kb of size per image</p>                
                 
-                <div class="col-4"><img src="images/agency/img1.jpg" alt="1"></div>
-                <div class="col-4"><img src="images/agency/img2.jpg" alt="1"></div>
-                <div class="col-4"><img src="images/agency/img3.jpg" alt="1"></div>
-                <div class="col-4"><img src="images/agency/img4.jpg" alt="1"></div>
+                <div class="col-4"><img src="<?php echo base_url("frontend")."/";?>images/agency/img1.jpg" alt="1"></div>
+                <div class="col-4"><img src="<?php echo base_url("frontend")."/";?>images/agency/img2.jpg" alt="1"></div>
+                <div class="col-4"><img src="<?php echo base_url("frontend")."/";?>images/agency/img3.jpg" alt="1"></div>
+                <div class="col-4"><img src="<?php echo base_url("frontend")."/";?>images/agency/img4.jpg" alt="1"></div>
                 
                 </div>
                 
@@ -101,7 +101,7 @@
 	<!--/#scripts--> 
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="js/jquery.dlmenu.js"></script>
+		<script src="<?php echo base_url("frontend")."/";?>js/jquery.dlmenu.js"></script>
 		<script>
 			$(function() {
 				$( '#dl-menu' ).dlmenu();
@@ -109,9 +109,9 @@
 		</script>
 
 	<!--/#scripts--> 
-    <!--<script type="text/javascript" src="js/jquery.js"></script>-->
-    <script type="text/javascript" src="js/custom.js"></script>
-    <!--<script type="text/javascript" src="js/jquery.instastream.js"></script>-->
+    <!--<script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/jquery.js"></script>-->
+    <script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/custom.js"></script>
+    <!--<script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/jquery.instastream.js"></script>-->
     
 </body>
 

@@ -77,9 +77,9 @@
 		</script>
 
 	<!--/#scripts--> 
-    <!--<script type="text/javascript" src="js/jquery.js"></script>-->
+    <!--<script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/jquery.js"></script>-->
     <script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/custom.js"></script>
-    <!--<script type="text/javascript" src="js/jquery.instastream.js"></script>-->
+    <!--<script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/jquery.instastream.js"></script>-->
     <script type="text/javascript">
         
 

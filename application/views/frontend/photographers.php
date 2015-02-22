@@ -40,7 +40,7 @@
         <div id="loaderImage"></div>
     </div>-->
     <div class="wrapper">
-    <?php include('header.php'); ?>
+    <?php $this->load->view("frontend/header"); ?>
   
         <!--<header class="mobile_menu"> 
             <a href="index.php"><div class="mobile_logo"></div></a>

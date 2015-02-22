@@ -30,7 +30,7 @@
         <div id="loaderImage"></div>
     </div>-->
     <div class="wrapper">
-   <!-- <center><a href="index.php"><img class="logo" src="images/logo.png" alt="logo"></a></center>-->
+   <!-- <center><a href="index.php"><img class="logo" src="<?php echo base_url("frontend")."/";?>images/logo.png" alt="logo"></a></center>-->
 
   <?php $this->load->view("frontend/header"); ?>
 
@@ -71,7 +71,7 @@
 
 	<!--/#scripts--> 
     
-    <!--<script type="text/javascript" src="js/jquery.js"></script>-->
+    <!--<script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/jquery.js"></script>-->
     <script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/custom.js"></script>
     <script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/jquery.instastream.js"></script>
     

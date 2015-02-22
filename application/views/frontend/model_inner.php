@@ -165,67 +165,67 @@
                             </div>    
 
                         </div>
-                <div class="two_img"><img src="images/model/1.jpg"></div>
+                <div class="two_img"><img src="<?php echo base_url("frontend")."/";?>images/model/1.jpg"></div>
 				</div>
 				
 				<div class="slide" id="main_slide2">
-                        <div class="single_img"><img src="images/model/2.jpg"></div>
+                        <div class="single_img"><img src="<?php echo base_url("frontend")."/";?>images/model/2.jpg"></div>
 				</div>
 				
 				<div class="slide" id="main_slide3">
-                        <div class="single_img"><img src="images/model/4.jpg"></div>
+                        <div class="single_img"><img src="<?php echo base_url("frontend")."/";?>images/model/4.jpg"></div>
 				</div>
 				
 				<div class="slide"  id="main_slide4">
-                        <div class="two_img"><img src="images/model/5.jpg"></div><div class="two_img"><img src="images/model/6.jpg"></div>
+                        <div class="two_img"><img src="<?php echo base_url("frontend")."/";?>images/model/5.jpg"></div><div class="two_img"><img src="<?php echo base_url("frontend")."/";?>images/model/6.jpg"></div>
 				</div>
                 
 				<div class="slide" id="main_slide5">
-                        <div class="single_img"><img src="images/model/7.jpg"></div>
+                        <div class="single_img"><img src="<?php echo base_url("frontend")."/";?>images/model/7.jpg"></div>
 				</div>
 				
 				<div class="slide" id="main_slide6">
-                        <div class="single_img"><img src="images/model/8.jpg"></div>
+                        <div class="single_img"><img src="<?php echo base_url("frontend")."/";?>images/model/8.jpg"></div>
 				</div>
 				
 				<div class="slide" id="main_slide7">
-                        <div class="single_img"><img src="images/model/9.jpg"></div>
+                        <div class="single_img"><img src="<?php echo base_url("frontend")."/";?>images/model/9.jpg"></div>
 				</div>
 				
 				<div class="slide" id="main_slide8">
-                        <div class="single_img"><img src="images/model/10.jpg"></div>
+                        <div class="single_img"><img src="<?php echo base_url("frontend")."/";?>images/model/10.jpg"></div>
 				</div>
 				
 				<div class="slide" id="main_slide9">
-                        <div class="single_img"><img src="images/model/11.jpg"></div>
+                        <div class="single_img"><img src="<?php echo base_url("frontend")."/";?>images/model/11.jpg"></div>
 				</div>
 				
 				<div class="slide" id="main_slide10">
-                        <div class="single_img"><img src="images/model/12.jpg"></div>
+                        <div class="single_img"><img src="<?php echo base_url("frontend")."/";?>images/model/12.jpg"></div>
 				</div>
 				
 				<div class="slide" id="main_slide11">
-                        <div class="single_img"><img src="images/model/13.jpg"></div>
+                        <div class="single_img"><img src="<?php echo base_url("frontend")."/";?>images/model/13.jpg"></div>
 				</div>
 				
 				<div class="slide" id="main_slide12">
-                        <div class="single_img"><img src="images/model/14.jpg"></div>
+                        <div class="single_img"><img src="<?php echo base_url("frontend")."/";?>images/model/14.jpg"></div>
 				</div>
 				
 				<div class="slide"  id="main_slide13">
-                        <div class="two_img"><img src="images/model/15.jpg"></div><div class="two_img"><img src="images/model/18.jpg"></div>
+                        <div class="two_img"><img src="<?php echo base_url("frontend")."/";?>images/model/15.jpg"></div><div class="two_img"><img src="<?php echo base_url("frontend")."/";?>images/model/18.jpg"></div>
 				</div>
                 
 				<div class="slide" id="main_slide14">
-                        <div class="single_img"><img src="images/model/16.jpg"></div>
+                        <div class="single_img"><img src="<?php echo base_url("frontend")."/";?>images/model/16.jpg"></div>
 				</div>
 				
 				<div class="slide" id="main_slide15">
-                        <div class="single_img"><img src="images/model/17.jpg"></div>
+                        <div class="single_img"><img src="<?php echo base_url("frontend")."/";?>images/model/17.jpg"></div>
 				</div>
 				
 				<div class="slide" id="main_slide16">
-                        <div class="single_img"><img src="images/model/19.jpg"></div>
+                        <div class="single_img"><img src="<?php echo base_url("frontend")."/";?>images/model/19.jpg"></div>
 				</div>
 			
 			</div>
@@ -236,38 +236,38 @@
 
             
                       <div id="beauty">
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/coverstories/miguel_1.jpg" class="display" alt="1"><span class="photo_name">Portugal cover stories</span></a></div>
+                <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/coverstories/miguel_1.jpg" class="display" alt="1"><span class="photo_name">Portugal cover stories</span></a></div>
                 
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/coverstories/miguel_2.jpg" class="display" alt="1"><span class="photo_name">Portugal cover stories</span></a></div>
+                <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/coverstories/miguel_2.jpg" class="display" alt="1"><span class="photo_name">Portugal cover stories</span></a></div>
                 
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/coverstories/miguel_3.jpg" class="display" alt="1"><span class="photo_name">Portugal cover stories</span></a></div>
+                <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/coverstories/miguel_3.jpg" class="display" alt="1"><span class="photo_name">Portugal cover stories</span></a></div>
                 
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/coverstories/miguel_4.jpg" class="display" alt="1"><span class="photo_name">Portugal cover stories</span></a></div>
+                <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/coverstories/miguel_4.jpg" class="display" alt="1"><span class="photo_name">Portugal cover stories</span></a></div>
                 
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/coverstories/miguel_5.jpg" class="display" alt="1"><span class="photo_name">Portugal cover stories</span></a></div>
+                <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/coverstories/miguel_5.jpg" class="display" alt="1"><span class="photo_name">Portugal cover stories</span></a></div>
                 
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/coverstories/miguel_6.jpg" class="display" alt="1"><span class="photo_name">Portugal cover stories</span></a></div>
+                <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/coverstories/miguel_6.jpg" class="display" alt="1"><span class="photo_name">Portugal cover stories</span></a></div>
                 
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/coverstories/miguel_7.jpg" class="display" alt="1"><span class="photo_name">Portugal cover stories</span></a></div>    
+                <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/coverstories/miguel_7.jpg" class="display" alt="1"><span class="photo_name">Portugal cover stories</span></a></div>    
 
             
             </div>
             
             
             <div id="advertising">
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/men/miguel_1.jpg" class="display" alt="1"><span class="photo_name">Men 1</span></a></div>
+                <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/men/miguel_1.jpg" class="display" alt="1"><span class="photo_name">Men 1</span></a></div>
                 
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/men/miguel_2.jpg" class="display" alt="1"><span class="photo_name">Men 2</span></a></div>
+                <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/men/miguel_2.jpg" class="display" alt="1"><span class="photo_name">Men 2</span></a></div>
                 
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/men/miguel_3.jpg" class="display" alt="1"><span class="photo_name">Men 3</span></a></div>
+                <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/men/miguel_3.jpg" class="display" alt="1"><span class="photo_name">Men 3</span></a></div>
                 
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/men/miguel_4.jpg" class="display" alt="1"><span class="photo_name">Men 4</span></a></div>
+                <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/men/miguel_4.jpg" class="display" alt="1"><span class="photo_name">Men 4</span></a></div>
                 
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/men/miguel_5.jpg" class="display" alt="1"><span class="photo_name">Men 5</span></a></div>
+                <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/men/miguel_5.jpg" class="display" alt="1"><span class="photo_name">Men 5</span></a></div>
                 
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/men/miguel_6.jpg" class="display" alt="1"><span class="photo_name">Men 6</span></a></div>
+                <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/men/miguel_6.jpg" class="display" alt="1"><span class="photo_name">Men 6</span></a></div>
                 
-                <div class="col-h model_single"><a href="#"><img src="images/photographers/album/men/miguel_7.jpg" class="display" alt="1"><span class="photo_name">Men 7</span></a></div> 
+                <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/men/miguel_7.jpg" class="display" alt="1"><span class="photo_name">Men 7</span></a></div> 
             
             </div>
             
@@ -322,67 +322,67 @@
           <a href="#" class="control_prev_2"><</a>
           <div class="slider2">
               <div class="slide2" id="slide1">
-                        <img src="images/model/1.jpg" height="90%"><img src="images/model/3.jpg" height="90%">
+                        <img src="<?php echo base_url("frontend")."/";?>images/model/1.jpg" height="90%"><img src="<?php echo base_url("frontend")."/";?>images/model/3.jpg" height="90%">
 				</div>
 				
 				<div class="slide2" id="slide2">
-                        <img src="images/model/2.jpg" height="100%">
+                        <img src="<?php echo base_url("frontend")."/";?>images/model/2.jpg" height="100%">
 				</div>
 				
 				<div class="slide2" id="slide3">
-                        <img src="images/model/4.jpg" height="100%">
+                        <img src="<?php echo base_url("frontend")."/";?>images/model/4.jpg" height="100%">
 				</div>
 				
 				<div class="slide2"  id="slide4">
-                        <img src="images/model/5.jpg" height="100%"><img src="images/model/6.jpg" height="100%">
+                        <img src="<?php echo base_url("frontend")."/";?>images/model/5.jpg" height="100%"><img src="<?php echo base_url("frontend")."/";?>images/model/6.jpg" height="100%">
 				</div>
                 
 				<div class="slide2" id="slide5">
-                        <img src="images/model/7.jpg" height="100%">
+                        <img src="<?php echo base_url("frontend")."/";?>images/model/7.jpg" height="100%">
 				</div>
 				
 				<div class="slide2" id="slide6">
-                        <img src="images/model/8.jpg" height="100%">
+                        <img src="<?php echo base_url("frontend")."/";?>images/model/8.jpg" height="100%">
 				</div>
 				
 				<div class="slide2" id="slide7">
-                        <img src="images/model/9.jpg" height="100%">
+                        <img src="<?php echo base_url("frontend")."/";?>images/model/9.jpg" height="100%">
 				</div>
 				
 				<div class="slide2" id="slide8">
-                        <img src="images/model/10.jpg" height="100%">
+                        <img src="<?php echo base_url("frontend")."/";?>images/model/10.jpg" height="100%">
 				</div>
 				
 				<div class="slide2" id="slide9">
-                        <img src="images/model/11.jpg" height="100%">
+                        <img src="<?php echo base_url("frontend")."/";?>images/model/11.jpg" height="100%">
 				</div>
 				
 				<div class="slide2" id="slide10">
-                        <img src="images/model/12.jpg" height="100%">
+                        <img src="<?php echo base_url("frontend")."/";?>images/model/12.jpg" height="100%">
 				</div>
 				
 				<div class="slide2" id="slide11">
-                        <img src="images/model/13.jpg" height="100%">
+                        <img src="<?php echo base_url("frontend")."/";?>images/model/13.jpg" height="100%">
 				</div>
 				
 				<div class="slide2" id="slide12">
-                        <img src="images/model/14.jpg" height="100%">
+                        <img src="<?php echo base_url("frontend")."/";?>images/model/14.jpg" height="100%">
 				</div>
 				
 				<div class="slide2" id="slide13">
-                        <img src="images/model/15.jpg" height="100%"><img src="images/model/18.jpg" height="100%">
+                        <img src="<?php echo base_url("frontend")."/";?>images/model/15.jpg" height="100%"><img src="<?php echo base_url("frontend")."/";?>images/model/18.jpg" height="100%">
 				</div>
 				
 				<div class="slide2" id="slide14">
-                        <img src="images/model/16.jpg" height="100%">
+                        <img src="<?php echo base_url("frontend")."/";?>images/model/16.jpg" height="100%">
 				</div>
 				
 				<div class="slide2" id="slide15">
-                        <img src="images/model/17.jpg" height="100%">
+                        <img src="<?php echo base_url("frontend")."/";?>images/model/17.jpg" height="100%">
 				</div>
 				
 				<div class="slide2" id="slide16">
-                        <img src="images/model/19.jpg" height="100%">
+                        <img src="<?php echo base_url("frontend")."/";?>images/model/19.jpg" height="100%">
 				</div>
 				
 

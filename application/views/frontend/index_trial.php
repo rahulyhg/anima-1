@@ -11,11 +11,11 @@
     <title>Anima Creative Management</title>
 	
 	<!--CSS-->
-	<link href="css/style.css" rel="stylesheet">	
-	<link href="css/insta.css" rel="stylesheet">	
-	<link href="css/dl-menu.css" rel="stylesheet">	
+	<link href="<?php echo base_url("frontend")."/";?>css/style.css" rel="stylesheet">	
+	<link href="<?php echo base_url("frontend")."/";?>css/insta.css" rel="stylesheet">	
+	<link href="<?php echo base_url("frontend")."/";?>css/dl-menu.css" rel="stylesheet">	
 
-    <script src="js/modernizr.custom.js"></script>
+    <script src="<?php echo base_url("frontend")."/";?>js/modernizr.custom.js"></script>
 	
 </head><!--/head-->
 <body>
@@ -24,7 +24,7 @@
         <div id="loaderImage"></div>
     </div>-->
     <div class="wrapper">
-    <center><a href="index.php"><img class="logo" src="images/logo.png" alt="logo"></a></center>
+    <center><a href="index.php"><img class="logo" src="<?php echo base_url("frontend")."/";?>images/logo.png" alt="logo"></a></center>
     <header class="menu">
         <ul>
         <li><a href="#" id="model">Models</a>
@@ -91,40 +91,40 @@
         <div class="container">
             <div class="banner">
                 <div class="fade" id="one">
-                    <div class="col-5"><img src="images/banner/1.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/2.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/3.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/4.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/5.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/6.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/7.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/8.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/9.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/10.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/1.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/2.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/3.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/4.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/5.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/6.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/7.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/8.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/9.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/10.jpg" alt="1"></div>
                 </div>
                 <div class="fade" id="two">
-                    <div class="col-5"><img src="images/banner/8.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/10.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/6.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/1.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/3.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/9.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/7.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/5.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/4.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/2.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/8.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/10.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/6.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/1.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/3.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/9.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/7.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/5.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/4.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/2.jpg" alt="1"></div>
                 </div>
                 <div class="fade" id="three">
-                    <div class="col-5"><img src="images/banner/10.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/7.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/3.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/4.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/2.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/9.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/6.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/5.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/8.jpg" alt="1"></div>
-                    <div class="col-5"><img src="images/banner/1.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/10.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/7.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/3.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/4.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/2.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/9.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/6.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/5.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/8.jpg" alt="1"></div>
+                    <div class="col-5"><img src="<?php echo base_url("frontend")."/";?>images/banner/1.jpg" alt="1"></div>
                 </div>
             </div>
             
@@ -135,18 +135,18 @@
             <div class="instagram">
                     
                 
-                <div class="fig first cap-bot"><a href="http://instagram.com/animacreatives" target="_blank" ><img src="images/instagram/insta1.jpg" alt="1"><div class="caption"><img src="images/heart.png" width="14" height="12"><span>200</span></div></a></div>
+                <div class="fig first cap-bot"><a href="http://instagram.com/animacreatives" target="_blank" ><img src="<?php echo base_url("frontend")."/";?>images/instagram/insta1.jpg" alt="1"><div class="caption"><img src="<?php echo base_url("frontend")."/";?>images/heart.png" width="14" height="12"><span>200</span></div></a></div>
                     
                 
-                <div class="fig cap-bot"><a href="http://instagram.com/animacreatives" target="_blank"><img src="images/instagram/insta2.jpg" alt="1"><div class="caption"><img src="images/heart.png" width="14" height="12"><span>200</span></div></a></div>
+                <div class="fig cap-bot"><a href="http://instagram.com/animacreatives" target="_blank"><img src="<?php echo base_url("frontend")."/";?>images/instagram/insta2.jpg" alt="1"><div class="caption"><img src="<?php echo base_url("frontend")."/";?>images/heart.png" width="14" height="12"><span>200</span></div></a></div>
                     
-                <div class="fig cap-bot"><a href="http://instagram.com/animacreatives" target="_blank"><img src="images/instagram/insta3.jpg" alt="1"><div class="caption"><img src="images/heart.png" width="14" height="12"><span>200</span></div></a></div>
+                <div class="fig cap-bot"><a href="http://instagram.com/animacreatives" target="_blank"><img src="<?php echo base_url("frontend")."/";?>images/instagram/insta3.jpg" alt="1"><div class="caption"><img src="<?php echo base_url("frontend")."/";?>images/heart.png" width="14" height="12"><span>200</span></div></a></div>
                 
                     
-                <div class="fig cap-bot"><a href="http://instagram.com/animacreatives" target="_blank"><img src="images/instagram/insta4.jpg" alt="1"><div class="caption"><img src="images/heart.png" width="14" height="12"><span>200</span></div></a></div>
+                <div class="fig cap-bot"><a href="http://instagram.com/animacreatives" target="_blank"><img src="<?php echo base_url("frontend")."/";?>images/instagram/insta4.jpg" alt="1"><div class="caption"><img src="<?php echo base_url("frontend")."/";?>images/heart.png" width="14" height="12"><span>200</span></div></a></div>
                     
                 
-                <div class="fig cap-bot"><a href="http://instagram.com/animacreatives" target="_blank"><img src="images/instagram/insta5.jpg" alt="1"><div class="caption"><img src="images/heart.png" width="14" height="12"><span>200</span></div></a></div>
+                <div class="fig cap-bot"><a href="http://instagram.com/animacreatives" target="_blank"><img src="<?php echo base_url("frontend")."/";?>images/instagram/insta5.jpg" alt="1"><div class="caption"><img src="<?php echo base_url("frontend")."/";?>images/heart.png" width="14" height="12"><span>200</span></div></a></div>
             </div>
 
             <!--<div id="insta"></div>-->
@@ -155,21 +155,21 @@
                 <ul id="lazyScrollLoading">
                 <li>    
                 <div class="news">
-                    <img src="images/news/news1.jpg">
+                    <img src="<?php echo base_url("frontend")."/";?>images/news/news1.jpg">
                     <strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</strong><hr />
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
                 </div>
                 </li>
                 <li>
                 <div class="news">
-                    <img src="images/news/news2.jpg">
+                    <img src="<?php echo base_url("frontend")."/";?>images/news/news2.jpg">
                     <strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</strong><hr />
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
                 </div>
                 </li>
                 <li>
                 <div class="news">
-                    <img src="images/news/news3.jpg">
+                    <img src="<?php echo base_url("frontend")."/";?>images/news/news3.jpg">
                     <strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</strong><hr />
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
                 </div>
@@ -177,7 +177,7 @@
                 <li>
                 <div class="news load2">
                     <span class="date">12.06.2014</span>
-                    <img src="images/news/news4.jpg">
+                    <img src="<?php echo base_url("frontend")."/";?>images/news/news4.jpg">
                     <strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</strong><hr />
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
                 </div>
@@ -185,7 +185,7 @@
                 <li>
                 <div class="news load2">
                     <span class="date">12.06.2014</span>
-                    <img src="images/news/news5.jpg">
+                    <img src="<?php echo base_url("frontend")."/";?>images/news/news5.jpg">
                     <strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</strong><hr />
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
                 </div>
@@ -193,19 +193,19 @@
                 <li>
                 <div class="news load2">
                     <span class="date">12.06.2014</span>
-                    <img src="images/news/news6.jpg">
+                    <img src="<?php echo base_url("frontend")."/";?>images/news/news6.jpg">
                     <strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</strong><hr />
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
                 </div>
                 </li>
                     <div class="loader load3">
-                    <img src="images/spinner.gif" width="20" height="20">
+                    <img src="<?php echo base_url("frontend")."/";?>images/spinner.gif" width="20" height="20">
                     <i>Loading More News</i>
                 </div>
                 <li>
                 <div class="news  load4">
                     <span class="date">12.06.2014</span>
-                    <img src="images/news/news7.jpg">
+                    <img src="<?php echo base_url("frontend")."/";?>images/news/news7.jpg">
                     <strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</strong><hr />
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
                 </div>
@@ -213,7 +213,7 @@
                 <li>
                 <div class="news  load4">
                     <span class="date">12.06.2014</span>
-                    <img src="images/news/news8.jpg">
+                    <img src="<?php echo base_url("frontend")."/";?>images/news/news8.jpg">
                     <strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</strong><hr />
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
                 </div>
@@ -221,7 +221,7 @@
                 <li>
                 <div class="news  load4">
                     <span class="date">12.06.2014</span>
-                    <img src="images/news/news9.jpg">
+                    <img src="<?php echo base_url("frontend")."/";?>images/news/news9.jpg">
                     <strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</strong><hr />
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
                 </div>
@@ -252,7 +252,7 @@
     </div>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="js/jquery.dlmenu.js"></script>
+		<script src="<?php echo base_url("frontend")."/";?>js/jquery.dlmenu.js"></script>
 		<script>
 			$(function() {
 				$( '#dl-menu' ).dlmenu();
@@ -260,9 +260,9 @@
 		</script>
 
 	<!--/#scripts--> 
-    <!--<script type="text/javascript" src="js/jquery.js"></script>-->
-    <script type="text/javascript" src="js/custom.js"></script>
-    <!--<script type="text/javascript" src="js/jquery.instastream.js"></script>-->
+    <!--<script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/jquery.js"></script>-->
+    <script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/custom.js"></script>
+    <!--<script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/jquery.instastream.js"></script>-->
     <script type="text/javascript">
         
 

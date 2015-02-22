@@ -11,11 +11,11 @@
     <title>Anima Creative Management</title>
 	
 	<!--CSS-->
-	<link href="css/style.css" rel="stylesheet">	
-	<link href="css/insta.css" rel="stylesheet">	
-	<link href="css/dl-menu.css" rel="stylesheet">	
+	<link href="<?php echo base_url("frontend")."/";?>css/style.css" rel="stylesheet">	
+	<link href="<?php echo base_url("frontend")."/";?>css/insta.css" rel="stylesheet">	
+	<link href="<?php echo base_url("frontend")."/";?>css/dl-menu.css" rel="stylesheet">	
 
-    <script src="js/modernizr.custom.js"></script>
+    <script src="<?php echo base_url("frontend")."/";?>js/modernizr.custom.js"></script>
 	<script type="text/javascript">
 
      $(document).ready(function () {
@@ -68,10 +68,10 @@
                         mark luburic<br />markanima@gmail.com<br />
                     </div> 
                     <div class="contact_block2">
-                        <a href="#"><img src="images/twitter.png"></a>
-                        <a href="#"><img src="images/v.png"></a>
-                        <a href="#"><img src="images/facebook.png"></a>
-                        <a href="#"><img src="images/insta.png"></a>
+                        <a href="#"><img src="<?php echo base_url("frontend")."/";?>images/twitter.png"></a>
+                        <a href="#"><img src="<?php echo base_url("frontend")."/";?>images/v.png"></a>
+                        <a href="#"><img src="<?php echo base_url("frontend")."/";?>images/facebook.png"></a>
+                        <a href="#"><img src="<?php echo base_url("frontend")."/";?>images/insta.png"></a>
 
                     </div> 
                 </div>
@@ -98,7 +98,7 @@
 	<!--/#scripts--> 
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="js/jquery.dlmenu.js"></script>
+		<script src="<?php echo base_url("frontend")."/";?>js/jquery.dlmenu.js"></script>
 		<script>
 			$(function() {
 				$( '#dl-menu' ).dlmenu();
@@ -106,9 +106,9 @@
 		</script>
 
 	<!--/#scripts--> 
-    <!--<script type="text/javascript" src="js/jquery.js"></script>-->
-    <script type="text/javascript" src="js/custom.js"></script>
-    <!--<script type="text/javascript" src="js/jquery.instastream.js"></script>-->
+    <!--<script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/jquery.js"></script>-->
+    <script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/custom.js"></script>
+    <!--<script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/jquery.instastream.js"></script>-->
     
 </body>
 
