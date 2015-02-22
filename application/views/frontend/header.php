@@ -17,12 +17,12 @@
         </li>
         <li><a href="#">Agency</a>
             <ul class="">
-                <li><a href="about.php">About Us</a></li>
-                <li><a href="become_model.php">Become A Model</a></li>
-                <li><a href="contact.php">Contact Us</a></li>
+                <li><a href="<?php echo site_url("website/about");?>">About Us</a></li>
+                <li><a href="<?php echo site_url("website/become_model");?>">Become A Model</a></li>
+                <li><a href="<?php echo site_url("website/contact");?>">Contact Us</a></li>
             </ul>
         </li>
-        <li><a href="news.php">News</a></li>
+        <li><a href="<?php echo site_url("website/news");?>">News</a></li>
         </ul>
     </header>
 

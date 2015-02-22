@@ -113,5 +113,18 @@ class Website extends CI_Controller
         $this->load->view("frontend/gallery2",$data);
     }
     
+    public function about()
+    {
+        $this->load->view("frontend/about");
+    }
+    public function become_model()
+    {
+        $this->load->view("frontend/become_model");
+    }
+    public function contact()
+    {
+        $this->load->view("frontend/contact");
+    }
+    
 }
 ?>
