@@ -211,7 +211,7 @@ img.displayed {
     display: block;
     margin-left: 10%;
     margin-right: auto;
-    width: 80%;
+    height: 100%;
 }
 .model_name{ font-size: 11px; float: left; margin: 0 10%; }
 .model_single{ margin-bottom: 63px; height: 260px; background: url(../images/spinner.gif) center no-repeat; }
@@ -227,7 +227,7 @@ img.displayed {
 
 
 /*--------------------------model inner page----------------------------*/
-.model_info{ float: left; width: 50%; border: 1px solid #000; margin-left: -5%; margin-right: 0.5%; height: 525px; }
+.model_info{ float: left; width: 48%; border: 1px solid #000; margin-left: 0.5%; margin-right: 0.5%; height: 525px; }
 /*.model_details{ width: 100%; margin-top: 20%;}
 .att, .value{ width: 34%;  margin:1.5% 6.5%; float: left; }
 .att{ text-align: right;}

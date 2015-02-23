@@ -223,6 +223,7 @@
     cursor: default;
 }
 
+.first_img img { }
 .double_img img{ padding-right: 3px; }
 .model_info img { height: 18px; padding: 12% 0 0; }
 a.black_link { cursor: url(left.png),auto; }
@@ -251,7 +252,7 @@ a.black_link:hover{ color: #000; }
 }
 .model_info { height: 193px;}
 .connected-carousels .carousel-stage li .double_img { margin-left: 0.5% !important; }
-.connected-carousels .carousel-stage li .double_img img { width: 48%; float: left;  }
+.connected-carousels .carousel-stage li .double_img img { float: left;  }
 .model_info td { padding: 1px 8px; }
 .model_table { font-size: 10px; margin-top: 5px; }
 #editorial, #beauty, #advertising, #videos, #bio{ top: 74px;}

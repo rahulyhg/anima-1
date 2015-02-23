@@ -27,41 +27,35 @@
 			});
 		</script>
 	<script type="text/javascript">
-
      $(document).ready(function () {
          $('.model_single img, .photo_name').delay(1000).fadeIn('slow');
          var windowWidth = $(window).width();
-
          $(window).resize(function () {
              if (windowWidth != $(window).width()) {
                  location.reload();
                  return;
              }
          });
-
          var winHeight = $(window).height();
-
          if (windowWidth > 1200) {
              var stageHeight = winHeight - 70;
-
+             var img_height = stageHeight - 10;
              $('.connected-carousels .carousel-stage').css('height', stageHeight);
+             $('.two_img img').css('height', img_height);
+             $('.first_img').css('height', img_height);
              $('.model_info').css('height', stageHeight - 10);
          }
-
          $('.prev-stage').trigger("click");
          $('.prev-navigation').trigger("click");
 
-
          $('#editorial_tab').addClass('tab_active');
          $('#editorial').fadeIn();
-
          //$('.photo_tabs a').click(function () {
          //    id = this.id;
          //    $('#' + id).click(function () {
          //        $('#' + id + '_div').fadeIn();
          //    });
          //});
-
 
          $('#editorial_tab').click(function () {
              $('#editorial').fadeIn();
@@ -75,7 +69,6 @@
              $('#videos_tab').removeClass('tab_active');
              $('#bio_tab').removeClass('tab_active');
          });
-
          $('#beauty_tab').click(function () {
              $('#editorial').fadeOut();
              $('#beauty').fadeIn();
@@ -88,7 +81,6 @@
              $('#videos_tab').removeClass('tab_active');
              $('#bio_tab').removeClass('tab_active');
          });
-
          $('#advertising_tab').click(function () {
              $('#editorial').fadeOut();
              $('#beauty').fadeOut();
@@ -101,7 +93,6 @@
              $('#videos_tab').removeClass('tab_active');
              $('#bio_tab').removeClass('tab_active');
          });
-
          $('#videos_tab').click(function () {
              $('#editorial').fadeOut();
              $('#beauty').fadeOut();
@@ -114,7 +105,6 @@
              $('#videos_tab').addClass('tab_active');
              $('#bio_tab').removeClass('tab_active');
          });
-
          $('#bio_tab').click(function () {
              $('#editorial').fadeOut();
              $('#beauty').fadeOut();
@@ -127,50 +117,74 @@
              $('#videos_tab').removeClass('tab_active');
              $('#bio_tab').addClass('tab_active');
          });
-
          //$('.carousel-navigation').click(function () {
          //    $('.connected-carousels .stage').css("opacity", "0");
          //    //$('.connected-carousels .stage').delay(500).css("opacity", "100");
          //});
-
          //$('.next-stage').click(function () {
          //    $('.connected-carousels .stage').fadeOut(10);
          //    $('.connected-carousels .stage').delay(100).fadeIn(10);
-
          //});
-
 
          //$('.prev-stage').click(function () {
          //    $('.connected-carousels .stage').css("opacity", "0");
          //    $('.connected-carousels .stage').delay(500).css("opacity", "100");
-
          //});
-
          //var doc = $(document).height();
          //$("#backto").css("height",doc);
-
          //$("#backto").click(function () {
          //    alert(1);
          //});
 
+         $('.carousel-navigation').click(function () {
+             leftspace();
+         });
+         $('.next-stage').click(function () {
+             leftspace();
+         });
 
+         $('.prev-stage').click(function () {
+             leftspace();
+         });
+         //var doc = $(document).height();
+         //$("#backto").css("height",doc);
+         //$("#backto").click(function () {
+         //    alert(1);
+         //});
+
+         leftspace();
+         
+         //$(".two_img img").each(function () {
+         //    var carousel_width = $('.carousel-stage').width();
+         //    var double_width = $(this).width();
+         //    var double_left = carousel_width - double_width;
+         //    var double_half = double_left / 2;
+         //    $('.two_img').css("margin-left", double_half);
+
+         //});
+
+
+     });
+
+     function leftspace() {
          var carousel_width = $('.carousel-stage').width();
          var double_width = $('.double_img').width();
          var double_left = carousel_width - double_width;
          var double_half = double_left / 2;
          $('.carousel-stage li').css('width', carousel_width);
-         $('.double_img').css("margin-left", double_half);
-
-     });
+         //$('.double_img').css("margin-left", double_half);
+     }
     </script>
 
     <style>
         .wrapper { width: 1024px;}
         .model_single img, .photo_name{display: none;}
         .photo_tabs, .tab_menu{ height: auto; padding-bottom: 5px;}
+        .double_img{ margin-left: 6%; }
         @media screen and (min-width: 1024px){
             #editorial, #beauty, #advertising, #videos, #bio{ width: 1024px; top:30px;}
         }
+
 </style> 
 </head><!--/head-->
 <body>
@@ -200,7 +214,7 @@
                     <div class="carousel carousel-stage">
                         <ul>
                             <li>
-                                <div class="double_img">
+                                <div class="double_img first_img">
                                     <a href="<?php echo site_url("website/models?id=").$model->category; ?>" class="black_link">
                                     <div class="model_info">
                                         <img src="<?php echo base_url("frontend")."/";?>images/logo.png" class="small_logo">
@@ -220,14 +234,14 @@
                                     </div>
                                     </a>
                                     <!--<?php print_r($modelimages) ?>-->
-                                    <img src="<?php echo base_url("uploads")."/".$modelimages[0]->image?>" style="float: left;" height="100%" alt="">
+                                    <img src="<?php echo base_url("uploads")."/".$modelimages[0]->image?>" class="first_img" style="float: left;"  alt="">
                                 </div>
                             </li>
                             <?php $length = count($modelimages); for($x = 1; $x<$length; $x++) { 
                             if($modelimages[$x]->type == "1") { ?>
                             <li><img src="<?php echo base_url("uploads")."/".$modelimages[$x]->image ?>" height="100%" style="width:98%;" alt=""></li>
                             <?php } else if($modelimages[$x]->type=="0"){?>                     
-                            <li><div class="double_img"><img src="<?php echo base_url("uploads")."/".$modelimages[$x]->image ?>" style="float: left;width:48%;" height="100%" alt=""><img src="<?php echo base_url("uploads")."/".$modelimages[++$x]->image ?>" style="float: left;width:48%;" height="100%" alt=""></div></li>
+                            <li><div class="double_img two_img"><img src="<?php echo base_url("uploads")."/".$modelimages[$x]->image ?>" style="float: left; "  alt=""><img src="<?php echo base_url("uploads")."/".$modelimages[++$x]->image ?>" style="float: left; "  alt=""></div></li>
                             <?php }; };?>
                         </ul>
                     </div>
