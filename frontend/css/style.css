@@ -1,8 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 
 /*--------------------------body----------------------------*/
 body{ font-family: 'Open Sans', sans-serif; margin: 0;}
-a { text-decoration: none; color: #000;}
+a { text-decoration: none; color: #000; font-family: 'Roboto', sans-serif;}
 a:hover{ color: #FF8F1F; }
 .backto{ width: 100%; z-index: -1; }
 .col-1{width: 100%;}
@@ -150,10 +152,10 @@ a:hover{ color: #FF8F1F; }
 ul.about_drop{ margin-left: 50% !important;}*/
 .menu{ width: 100%; margin: auto;	margin-top:15px;}
 .menu ul{ list-style:none;	position:relative;	margin:0;	padding:0; text-align: center;}
-.menu ul a{	display:block;	color:#333; text-decoration:none;	font-size:12px;	line-height:32px;	padding:0 15px; }
+.menu ul a{	display:block;	color:#333; text-decoration:none;	font-size:13px;	line-height:32px;	padding:0 15px; font-family: 'Roboto Condensed', sans-serif; }
 .menu ul li{ position:relative;	display: inline-block;	margin:0 60px;	padding:0; }
 .menu ul li a:hover{ color: #FF8F1F; }
-.menu ul ul{ display:none;	position:absolute; top:100%; left:0; background:#fff; padding:0; box-shadow: 1px 1px 3px #333; -o-transition:all 1s;  -ms-transition:all 1s; -moz-transition:all 1s; -webkit-transition:all 1s; transition:all 1s; }
+.menu ul ul{ display:none;	position:absolute; top:100%; left:0; background:#fff; padding:0; box-shadow: 1px 1px 3px #333; -o-transition:all 1s;  -ms-transition:all 1s; -moz-transition:all 1s; -webkit-transition:all 1s; transition:all 1s; z-index: 2; }
 .menu ul ul li {float:none;	width:160px; text-align: left; margin: 0; }
 .menu ul ul a{line-height:120%;	padding:10px 15px;}
 .menu ul ul ul{top:0;	left:100%;}
@@ -213,7 +215,7 @@ img.displayed {
     margin-right: auto;
     height: 100%;
 }
-.model_name{ font-size: 11px; float: left; margin: 0 10%; }
+.model_name{ font-size: 12px; float: left; margin: 0 10%; }
 .model_single{ margin-bottom: 63px; height: 260px; background: url(../images/spinner.gif) center no-repeat; }
 
 .loader{ width: 100%; text-align: center;}

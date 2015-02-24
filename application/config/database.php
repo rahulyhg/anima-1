@@ -70,9 +70,9 @@ $myserver=$_SERVER['SERVER_NAME'];
 if($myserver!="localhost")
 {
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'wohligco_anima';
-$db['default']['password'] = 'chintan123';
-$db['default']['database'] = 'wohligco_anima';
+$db['default']['username'] = 'heptame_anima';
+$db['default']['password'] = 'Anima@123';
+$db['default']['database'] = 'heptame_anima';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
@@ -90,7 +90,7 @@ else
 {
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
-$db['default']['password'] = '';
+$db['default']['password'] = 'root';
 $db['default']['database'] = 'anima';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';

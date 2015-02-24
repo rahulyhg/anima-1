@@ -180,7 +180,8 @@
         .wrapper { width: 1024px;}
         .model_single img, .photo_name{display: none;}
         .photo_tabs, .tab_menu{ height: auto; padding-bottom: 5px;}
-        .double_img{ margin-left: 6%; }
+        .double_img{ margin-left: 1%; }
+        .double_img img, .first_img img{max-width: 49%; min-width: 49%;}
         @media screen and (min-width: 1024px){
             #editorial, #beauty, #advertising, #videos, #bio{ width: 1024px; top:30px;}
         }
@@ -214,7 +215,7 @@
                     <div class="carousel carousel-stage">
                         <ul>
                             <li>
-                                <div class="double_img first_img">
+                                <div class="first_img">
                                     <a href="<?php echo site_url("website/models?id=").$model->category; ?>" class="black_link">
                                     <div class="model_info">
                                         <img src="<?php echo base_url("frontend")."/";?>images/logo.png" class="small_logo">
