@@ -48,16 +48,13 @@
                 $(this).addClass('inactive');
                 $('.model_up_name').addClass('inact_name');
                 $('.model_up_name').removeClass('act_name');
-                $('.connected-carousels .stage').css('border','1px #fff solid');
-                //$('.connected-carousels .stage').removeClass('grey_border');
+                //$('.connected-carousels .stage').css('border','1px #fff solid');
             })
             .on('jcarouselcontrol:active', function () {
                 $(this).removeClass('inactive');
                 $('.model_up_name').addClass('act_name');
                 $('.model_up_name').removeClass('inact_name');
-                $('.connected-carousels .stage').css('border','1px #999 solid');
-               // $('.connected-carousels .stage').remvoeClass('white_border');
-            
+                //$('.connected-carousels .stage').css('border','1px #999 solid');
             })
             .jcarouselControl({
                 target: '-=1'

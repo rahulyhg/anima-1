@@ -195,21 +195,7 @@
             
                     
         </div>
-            <div id="footer">
-                    <hr class="footer_top" />
-                    <div class="footer_menu">
-                <ol>
-                    <li>Contact Us</li>
-                    <li>Terms & Conditions</li>
-                    <li>Privacy Policy</li>
-                    <li>Careers</li>
-                    <li>FAQs</li>
-                </ol>
-                </div>
-                <div class="copyright">© Copyright ANIMA CREATIVES 2014</div>
-                <div class="hepta">MADE WITH LOVE BY HEPTA</div>
-                </div>                  
-            </div>
+            <?php include('footer.php'); ?>
     </div>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

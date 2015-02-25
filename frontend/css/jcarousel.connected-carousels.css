@@ -223,8 +223,8 @@
     cursor: default;
 }
 
-.first_img img { }
-.double_img img{ padding-right: 3px; }
+.port_img { box-shadow: 2px 2px 4px #777;}
+.double_img img{ padding-right: 3px; box-shadow: 2px 2px 4px #777; }
 .model_info img { height: 18px; padding: 12% 0 0; }
 a.black_link { cursor: url(left.png),auto; }
 a.black_link:hover{ color: #000; }

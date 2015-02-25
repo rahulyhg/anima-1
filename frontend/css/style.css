@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
 @import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
 
 /*--------------------------body----------------------------*/
 body{ font-family: 'Open Sans', sans-serif; margin: 0;}
@@ -214,8 +215,9 @@ img.displayed {
     margin-left: 10%;
     margin-right: auto;
     height: 100%;
+    width: 200px;
 }
-.model_name{ font-size: 12px; float: left; margin: 0 10%; }
+.model_name{ font-size: 12px; float: left; margin: 0 10%; font-family: 'Droid Serif', serif; font-style: italic; }
 .model_single{ margin-bottom: 63px; height: 260px; background: url(../images/spinner.gif) center no-repeat; }
 
 .loader{ width: 100%; text-align: center;}
@@ -309,7 +311,7 @@ a.tab_active{ color: #FF8F1F;}
 .bio_table{ margin-bottom: 45px; font-style: italic; }
 .col-h { width: auto;   float: left; margin-left: 2%; margin-right: 1%;}
 img.display { display: block;    margin-left: 2.5%;    margin-right: auto;    height: 100%;}
-.photo_name{ font-size: 11px; float: left; margin: 0 2.5%;  }
+.photo_name{ font-size: 11px; float: left; margin: 0 2.5%; font-family: 'Droid Serif', serif; font-style: italic; }
 
 /*--------------------------Agency about us contact us become model----------------------------*/
 .about_inner{ width: 48%; margin-right: 2%; float: left; text-align: left; font-size: 13px;  padding-bottom: 40px;}

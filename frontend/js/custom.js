@@ -40,6 +40,11 @@ $(document).ready(function () {
     
     var three_img = $('#three img').width();
 
+
+
+
+
+
 });
 
 

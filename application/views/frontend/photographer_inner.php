@@ -152,20 +152,7 @@
                 
                 <?php } ?>
 
-            <div id="footer">
-                <hr class="footer_top" />
-                <div class="footer_menu">
-                <ol class="pxmenu">
-                    <li>Contact Us</li>
-                    <li>Terms & Conditions</li>
-                    <li>Privacy Policy</li>
-                    <li>Careers</li>
-                    <li>FAQs</li>
-                </ol>
-                </div>
-                <div class="copyright">© Copyright ANIMA CREATIVES 2014</div>
-                <div class="hepta">MADE WITH LOVE BY HEPTA</div>
-            </div>
+            <?php include('footer.php'); ?>
             </div>
             <div id="beauty">
                 <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/coverstories/miguel_1.jpg" class="display" alt="1"><span class="photo_name">Portugal cover stories</span></a></div>
@@ -182,20 +169,7 @@
                 
                 <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/coverstories/miguel_7.jpg" class="display" alt="1"><span class="photo_name">Portugal cover stories</span></a></div>    
 
-            <div id="footer">
-                <hr class="footer_top" />
-                <div class="footer_menu">
-                <ol class="pxmenu">
-                    <li>Contact Us</li>
-                    <li>Terms & Conditions</li>
-                    <li>Privacy Policy</li>
-                    <li>Careers</li>
-                    <li>FAQs</li>
-                </ol>
-                </div>
-                <div class="copyright">© Copyright ANIMA CREATIVES 2014</div>
-                <div class="hepta">MADE WITH LOVE BY HEPTA</div>
-            </div>
+            <?php include('footer.php'); ?>
             </div>
             
             
@@ -213,20 +187,7 @@
                 <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/men/miguel_6.jpg" class="display" alt="1"><span class="photo_name">Men 6</span></a></div>
                 
                 <div class="col-h model_single"><a href="#"><img src="<?php echo base_url("frontend")."/";?>images/photographers/album/men/miguel_7.jpg" class="display" alt="1"><span class="photo_name">Men 7</span></a></div> 
-            <div id="footer">
-                <hr class="footer_top" />
-                <div class="footer_menu">
-                <ol class="pxmenu">
-                    <li>Contact Us</li>
-                    <li>Terms & Conditions</li>
-                    <li>Privacy Policy</li>
-                    <li>Careers</li>
-                    <li>FAQs</li>
-                </ol>
-                </div>
-                <div class="copyright">© Copyright ANIMA CREATIVES 2014</div>
-                <div class="hepta">MADE WITH LOVE BY HEPTA</div>
-            </div>
+            <?php include('footer.php'); ?>
             </div>
             
             
@@ -237,20 +198,7 @@
                 <?php } ?>
                 </div>    
 
-            <div id="footer">
-                <hr class="footer_top" />
-                <div class="footer_menu">
-                <ol class="pxmenu">
-                    <li>Contact Us</li>
-                    <li>Terms & Conditions</li>
-                    <li>Privacy Policy</li>
-                    <li>Careers</li>
-                    <li>FAQs</li>
-                </ol>
-                </div>
-                <div class="copyright">© Copyright ANIMA CREATIVES 2014</div>
-                <div class="hepta">MADE WITH LOVE BY HEPTA</div>
-            </div>
+            <?php include('footer.php'); ?>
             </div>
             
             
@@ -280,20 +228,7 @@
                     <p><?php echo $photographer->bio; ?> </p>                </div>
                 
                                  
-            <div id="footer">
-                <hr class="footer_top" />
-                <div class="footer_menu">
-                <ol class="pxmenu">
-                    <li>Contact Us</li>
-                    <li>Terms & Conditions</li>
-                    <li>Privacy Policy</li>
-                    <li>Careers</li>
-                    <li>FAQs</li>
-                </ol>
-                </div>
-                <div class="copyright">© Copyright ANIMA CREATIVES 2014</div>
-                <div class="hepta">MADE WITH LOVE BY HEPTA</div>
-            </div>
+            <?php include('footer.php'); ?>
             </div>
     
         </div>

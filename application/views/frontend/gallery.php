@@ -235,12 +235,12 @@
                                     </div>
                                     </a>
                                     <!--<?php print_r($modelimages) ?>-->
-                                    <img src="<?php echo base_url("uploads")."/".$modelimages[0]->image?>" class="first_img" style="float: left;"  alt="">
+                                    <img src="<?php echo base_url("uploads")."/".$modelimages[0]->image?>" class="first_img port_img" style="float: left;"  alt="">
                                 </div>
                             </li>
                             <?php $length = count($modelimages); for($x = 1; $x<$length; $x++) { 
                             if($modelimages[$x]->type == "1") { ?>
-                            <li><img src="<?php echo base_url("uploads")."/".$modelimages[$x]->image ?>" height="100%" style="width:98%;" alt=""></li>
+                            <li><img src="<?php echo base_url("uploads")."/".$modelimages[$x]->image ?>" height="100%" style="width:98%; box-shadow: 2px 2px 4px #777;" alt=""></li>
                             <?php } else if($modelimages[$x]->type=="0"){?>                     
                             <li><div class="double_img two_img"><img src="<?php echo base_url("uploads")."/".$modelimages[$x]->image ?>" style="float: left; "  alt=""><img src="<?php echo base_url("uploads")."/".$modelimages[++$x]->image ?>" style="float: left; "  alt=""></div></li>
                             <?php }; };?>
@@ -366,7 +366,44 @@
 	
 
 	<!--/#scripts--> 
-    
+    <script language=JavaScript>
+<!--
+
+//Disable right mouse click Script
+//By Maximus (maximus@nsimail.com) w/ mods by DynamicDrive
+//For full source code, visit http://www.dynamicdrive.com
+
+var message="Function Disabled!";
+
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("alert(message);return false")
+
+// --> 
+</script>
     <!--<script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/jquery.js"></script>-->
     <script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/custom.js"></script>
     <script type="text/javascript" src="<?php echo base_url("frontend")."/";?>js/jquery.instastream.js"></script>
