@@ -71,7 +71,7 @@ if($myserver!="localhost")
 {
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
-$db['default']['password'] = 'root';
+$db['default']['password'] = '';
 $db['default']['database'] = 'anima';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
@@ -90,7 +90,7 @@ else
 {
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
-$db['default']['password'] = 'root';
+$db['default']['password'] = '';
 $db['default']['database'] = 'anima';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
